@@ -39,6 +39,26 @@ $ go run .
     ]
     ```
 
+- **/events/<id>**
+  - Description: 
+  - Example Request:
+    ```http
+    GET /events
+    ```
+  - Example Response:
+    ```json
+    [
+      {
+        "id": 1,
+        "name": "John Doe"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith"
+      }
+    ]
+    ```
+
 ### POST Requests
 
 - **/events**
@@ -60,9 +80,67 @@ $ go run .
     }
     ```
 
+- **/signup**
+  - Description: 
+  - Example Request:
+    ```http
+    POST /events
+    Content-Type: application/json
+
+    {
+      "name": "New User"
+    }
+    ```
+  - Example Response:
+    ```json
+    {
+      "id": 3,
+      "name": "New User"
+    }
+    ```
+
+- **/login**
+  - Description: 
+  - Example Request:
+    ```http
+    POST /events
+    Content-Type: application/json
+
+    {
+      "name": "New User"
+    }
+    ```
+  - Example Response:
+    ```json
+    {
+      "id": 3,
+      "name": "New User"
+    }
+    ```
+
+- **/events/<id>/register**
+  - Description: 
+  - Example Request:
+    ```http
+    POST /events
+    Content-Type: application/json
+
+    {
+      "name": "New User"
+    }
+    ```
+  - Example Response:
+    ```json
+    {
+      "id": 3,
+      "name": "New User"
+    }
+    ```
+
+
 ### PUT Requests
 
-- **/events**
+- **/events/<id>**
   - Description: Update an existing user.
   - Example Request:
     ```http
@@ -83,7 +161,7 @@ $ go run .
 
 ### DELETE Requests
 
-- **/events**
+- **/events/<id>**
   - Description: 
   - Example Request:
     ```http
@@ -95,5 +173,19 @@ $ go run .
       "message": "User deleted successfully"
     }
     ```
+- **/events/<id>/register**
+  - Description: 
+  - Example Request:
+    ```http
+    DELETE /events
+    ```
+  - Example Response:
+    ```json
+    {
+      "message": "User deleted successfully"
+    }
+    ```
+
+
 
 
