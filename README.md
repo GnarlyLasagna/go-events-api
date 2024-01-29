@@ -67,7 +67,7 @@ $ go run .
     ```http
     POST http://localhost:8080/events
     content-type: application/json
-    authorization: &lt;JWT TOKEN&gt;
+    authorization: <JWT TOKEN>
 
     {
     "name": "Test event",
@@ -129,7 +129,7 @@ $ go run .
   - Example Request:
     ```http
     POST http://localhost:8080/events/21/register
-    authorization: &lt;JWT TOKEN&gt;
+    authorization: <JWT TOKEN>
     ```
   - Example Response:
     ```json
@@ -148,7 +148,7 @@ $ go run .
     ```http
     PUT http://localhost:8080/events/21
     content-type: application/json
-    authorization: &lt;JWT TOKEN&gt;
+    authorization: <JWT TOKEN>
 
     {
     "name": "Updated test event",
@@ -172,7 +172,7 @@ $ go run .
   - Example Request:
     ```http
     DELETE http://localhost:8080/events/21
-    authorization: &lt;JWT TOKEN&gt;
+    authorization: <JWT TOKEN>
     ```
   - Example Response:
     ```json
@@ -185,7 +185,7 @@ $ go run .
   - Example Request:
     ```http
     DELETE http://localhost:8080/events/21/register
-    authorization: &lt;JWT TOKEN&gt;
+    authorization: <JWT TOKEN>
     ```
   - Example Response:
     ```json
