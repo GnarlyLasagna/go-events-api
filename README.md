@@ -17,7 +17,7 @@ $ go run .
 
 ## API Routes
 
-### GET Requests
+## GET Requests
 
 - **/api/events**
   - Description: Get a list of available events
