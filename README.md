@@ -28,14 +28,22 @@ $ go run .
   - Example Response:
     ```json
     [
-      {
-        "id": 1,
-        "name": "John Doe"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith"
-      }
+    {
+        "ID": 1,
+        "Name": "Test event",
+        "Description": "Test event!!!",
+        "Location": "A test location",
+        "DateTime": "2025-01-01T15:30:00Z",
+        "UserID": 1
+    },
+    {
+        "ID": 2,
+        "Name": "Second Test event",
+        "Description": "A Second Test event!!!",
+        "Location": "Another test location",
+        "DateTime": "2025-02-01T15:30:00Z",
+        "UserID": 1
+    }
     ]
     ```
 
@@ -47,16 +55,14 @@ $ go run .
     ```
   - Example Response:
     ```json
-    [
-      {
-        "id": 1,
-        "name": "John Doe"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith"
-      }
-    ]
+    {
+    "ID": 1,
+    "Name": "Test event",
+    "Description": "Test event!!!",
+    "Location": "A test location",
+    "DateTime": "2025-01-01T15:30:00Z",
+    "UserID": 1
+    }
     ```
 
 ## POST Requests
@@ -79,8 +85,15 @@ $ go run .
   - Example Response:
     ```json
     {
-      "id": 3,
-      "name": "New User"
+    "event": {
+        "ID": 1,
+        "Name": "Test event",
+        "Description": "Test event!!!",
+        "Location": "A test location",
+        "DateTime": "2025-01-01T15:30:00Z",
+        "UserID": 1
+    },
+    "message": "Event created!"
     }
     ```
 
@@ -98,10 +111,7 @@ $ go run .
     ```
   - Example Response:
     ```json
-    {
-      "id": 3,
-      "name": "New User"
-    }
+    {"message":"User created successfully"}
     ```
 
 ### - **/api/login**
@@ -119,8 +129,8 @@ $ go run .
   - Example Response:
     ```json
     {
-      "id": 3,
-      "name": "New User"
+    "message": "Login successful!",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiZXhwIjoxNzA2NTcyMjQzLCJ1c2VySWQiOjF9.RYcqW9laXx91E-0JNqPtyngLdYK3P9O8CvC7YgqrSVk"
     }
     ```
 
@@ -134,8 +144,7 @@ $ go run .
   - Example Response:
     ```json
     {
-      "id": 3,
-      "name": "New User"
+    "message": "Registered!"
     }
     ```
 
@@ -160,8 +169,7 @@ $ go run .
   - Example Response:
     ```json
     {
-      "id": 3,
-      "name": "Updated User"
+    "message": "Event updated successfully!"
     }
     ```
 
@@ -177,7 +185,7 @@ $ go run .
   - Example Response:
     ```json
     {
-      "message": "User deleted successfully"
+    "message": "Event deleted successfully!"
     }
     ```
 ### - **/api/events/&lt;id&gt;/register**
@@ -190,7 +198,7 @@ $ go run .
   - Example Response:
     ```json
     {
-      "message": "User deleted successfully"
+    "message": "Cancelled!"
     }
     ```
 
