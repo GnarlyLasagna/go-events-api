@@ -15,11 +15,11 @@ $ go run .
 ```
 ## API Details
 
-These libraries are the most important that allowed me to build this project.
-[Gin library](https://github.com/gin-gonic/gin) which was very helpful for HTTP request routing.
-[jwt-go](https://pkg.go.dev/github.com/golang-jwt/jwt/v5#section-readme) for Auth tokens in requests to verify users.
-[bcrypt](https://pkg.go.dev/golang.org/x/crypto@v0.18.0/bcrypt) for encrypting and decrypting passwords stored in the SQL DataBase.
-And [go-sqlite3](https://github.com/mattn/go-sqlite3) for running the SQL server.
+- These libraries are the most important that allowed me to build this project.
+- [Gin library](https://github.com/gin-gonic/gin) which was very helpful for HTTP request routing.
+- [jwt-go](https://pkg.go.dev/github.com/golang-jwt/jwt/v5#section-readme) for Auth tokens in requests to verify users.
+- [bcrypt](https://pkg.go.dev/golang.org/x/crypto@v0.18.0/bcrypt) for encrypting and decrypting passwords stored in the SQL DataBase.
+- And [go-sqlite3](https://github.com/mattn/go-sqlite3) for running the SQL server.
 
 
 # API Routes
