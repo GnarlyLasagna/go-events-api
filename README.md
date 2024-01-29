@@ -69,7 +69,7 @@ $ go run .
 
 ### - **/api/events**
   - Description: Create bookable event 
-**(Auth Required)**
+- **(Auth Required)**
   - Example Request:
     ```http
     POST http://localhost:8080/events
@@ -117,7 +117,7 @@ $ go run .
 
 ### - **/api/login**
   - Description: Sign in and Authenticate user 
-**(Returns Auth Token)**
+- **(Returns Auth Token)**
   - Example Request:
     ```http
     POST http://localhost:8080/login
@@ -138,7 +138,7 @@ $ go run .
 
 ### - **/api/events/&lt;id&gt;/register**
   - Description: Register the user for an Event 
-**(Auth Required)**
+- **(Auth Required)**
   - Example Request:
     ```http
     POST http://localhost:8080/events/21/register
@@ -156,7 +156,7 @@ $ go run .
 
 ### - **/api/events/&lt;id&gt;**
   - Description: Update an existing Event 
-**(Auth Required) (Only by Creator)**
+- **(Auth Required) (Only by Creator)**
   - Example Request:
     ```http
     PUT http://localhost:8080/events/21
@@ -181,7 +181,7 @@ $ go run .
 
 ### - **/api/events/&lt;id&gt;**
   - Description: Delete an Event by ID 
-**(Auth Required) (Only by Creator)**
+- **(Auth Required) (Only by Creator)**
   - Example Request:
     ```http
     DELETE http://localhost:8080/events/21
@@ -195,7 +195,7 @@ $ go run .
     ```
 ### - **/api/events/&lt;id&gt;/register**
   - Description: Delete a registration for an Event 
-**(Auth Required)**
+- **(Auth Required)**
   - Example Request:
     ```http
     DELETE http://localhost:8080/events/21/register
