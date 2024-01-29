@@ -39,7 +39,7 @@ $ go run .
     ]
     ```
 
-- **/api/events/<id>**
+- **/api/events/&lt;id&gt**
   - Description: Get an event by specific ID
   - Example Request:
     ```http
@@ -118,7 +118,7 @@ $ go run .
     }
     ```
 
-- **/api/events/<id>/register**
+- **/api/events/&lt;id&gt/register**
   - Description: Register the user for an Event (Auth Required)
   - Example Request:
     ```http
@@ -140,7 +140,7 @@ $ go run .
 
 ### PUT Requests
 
-- **/api/events/<id>**
+- **/api/events/&lt;id&gt**
   - Description: Update an existing Event (Auth Required) (Only by Creator)
   - Example Request:
     ```http
@@ -161,7 +161,7 @@ $ go run .
 
 ### DELETE Requests
 
-- **/api/events/<id>**
+- **/api/events/&lt;id&gt**
   - Description: Delete an Event by ID (Auth Required) (Only by Creator)
   - Example Request:
     ```http
@@ -173,7 +173,7 @@ $ go run .
       "message": "User deleted successfully"
     }
     ```
-- **/api/events/<id>/register**
+- **/api/events/&lt;id&gt/register**
   - Description: Delete a registration for an Event (Auth Required)
   - Example Request:
     ```http
