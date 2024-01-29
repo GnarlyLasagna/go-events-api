@@ -67,7 +67,7 @@ $ go run .
     ```http
     POST http://localhost:8080/events
     content-type: application/json
-    authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJleHAiOjE2OTkyODQzNDMsInVzZXJJZCI6MX0.GtpnS_WUOoJQ7wtcBQ4nL1w9q1XKuloePjvEr4aZom8
+    authorization: &lt;JWT TOKEN&gt;
 
     {
     "name": "Test event",
@@ -128,8 +128,8 @@ $ go run .
   - Description: Register the user for an Event **(Auth Required)**
   - Example Request:
     ```http
-    POST http://localhost:8080/events/1/register
-    authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiZXhwIjoxNjk5Mjg0NDUxLCJ1c2VySWQiOjJ9.zCjaAoFNnIBMbg8N8Hx4MS_KafwV5qkR4tc6YPlYQRg
+    POST http://localhost:8080/events/21/register
+    authorization: &lt;JWT TOKEN&gt;
     ```
   - Example Response:
     ```json
@@ -146,9 +146,9 @@ $ go run .
   - Description: Update an existing Event **(Auth Required) (Only by Creator)**
   - Example Request:
     ```http
-    PUT http://localhost:8080/events/5
+    PUT http://localhost:8080/events/21
     content-type: application/json
-    authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiZXhwIjoxNjk5MjgyODAzLCJ1c2VySWQiOjJ9.0v3T0JovPLtzaDnQ6VwSaR2wyyaWnM-0jY5KjhbLgUs
+    authorization: &lt;JWT TOKEN&gt;
 
     {
     "name": "Updated test event",
@@ -171,8 +171,8 @@ $ go run .
   - Description: Delete an Event by ID **(Auth Required) (Only by Creator)**
   - Example Request:
     ```http
-    DELETE http://localhost:8080/events/5
-    authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiZXhwIjoxNjk5MjgyOTI5LCJ1c2VySWQiOjJ9.7XsczbLX9dN2HocDsumtpQU6Rhvy_jbPTxL2YzbqCqA
+    DELETE http://localhost:8080/events/21
+    authorization: &lt;JWT TOKEN&gt;
     ```
   - Example Response:
     ```json
@@ -184,8 +184,8 @@ $ go run .
   - Description: Delete a registration for an Event **(Auth Required)**
   - Example Request:
     ```http
-    DELETE http://localhost:8080/events/1/register
-    authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiZXhwIjoxNjk5Mjg0NDUxLCJ1c2VySWQiOjJ9.zCjaAoFNnIBMbg8N8Hx4MS_KafwV5qkR4tc6YPlYQRg
+    DELETE http://localhost:8080/events/21/register
+    authorization: &lt;JWT TOKEN&gt;
     ```
   - Example Response:
     ```json
