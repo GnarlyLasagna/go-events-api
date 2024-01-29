@@ -19,7 +19,7 @@ $ go run .
 
 ### GET Requests
 
-- **/events**
+- **/api/events**
   - Description: 
   - Example Request:
     ```http
@@ -39,7 +39,7 @@ $ go run .
     ]
     ```
 
-- **/events/<id>**
+- **/api/events/<id>**
   - Description: 
   - Example Request:
     ```http
@@ -61,7 +61,7 @@ $ go run .
 
 ### POST Requests
 
-- **/events**
+- **/api/events**
   - Description: 
   - Example Request:
     ```http
@@ -80,7 +80,7 @@ $ go run .
     }
     ```
 
-- **/signup**
+- **/api/signup**
   - Description: 
   - Example Request:
     ```http
@@ -99,7 +99,7 @@ $ go run .
     }
     ```
 
-- **/login**
+- **/api/login**
   - Description: 
   - Example Request:
     ```http
@@ -118,7 +118,7 @@ $ go run .
     }
     ```
 
-- **/events/<id>/register**
+- **/api/events/<id>/register**
   - Description: 
   - Example Request:
     ```http
@@ -140,7 +140,7 @@ $ go run .
 
 ### PUT Requests
 
-- **/events/<id>**
+- **/api/events/<id>**
   - Description: Update an existing user.
   - Example Request:
     ```http
@@ -161,7 +161,7 @@ $ go run .
 
 ### DELETE Requests
 
-- **/events/<id>**
+- **/api/events/<id>**
   - Description: 
   - Example Request:
     ```http
@@ -173,7 +173,7 @@ $ go run .
       "message": "User deleted successfully"
     }
     ```
-- **/events/<id>/register**
+- **/api/events/<id>/register**
   - Description: 
   - Example Request:
     ```http
