@@ -13,6 +13,10 @@ Then run the API on Port:8080 :
 ```sh
 $ go run .
 ```
+## API Details
+
+This API project makes use of the [Gin library](https://github.com/gin-gonic/gin)
+which was very helpful for HTTP request routing
 
 
 # API Routes
