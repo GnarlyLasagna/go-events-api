@@ -15,7 +15,7 @@ $ go run .
 ```
 
 
-## API Routes
+# API Routes
 
 ## GET Requests
 
@@ -59,7 +59,7 @@ $ go run .
     ]
     ```
 
-### POST Requests
+## POST Requests
 
 - **/api/events**
   - Description: Create bookable event **(Auth Required)**
@@ -140,7 +140,7 @@ $ go run .
     ```
 
 
-### PUT Requests
+## PUT Requests
 
 - **/api/events/&lt;id&gt;**
   - Description: Update an existing Event **(Auth Required) (Only by Creator)**
@@ -165,7 +165,7 @@ $ go run .
     }
     ```
 
-### DELETE Requests
+## DELETE Requests
 
 - **/api/events/&lt;id&gt;**
   - Description: Delete an Event by ID **(Auth Required) (Only by Creator)**
